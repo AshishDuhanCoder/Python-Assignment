@@ -1,4 +1,6 @@
-def sqr():
-    a=int(input("Enter a number: "))
-    return print(a*a)
-sqr()
+def fun1():
+    print("Outer function")
+    def fun2():
+        print("Inner function")
+    return fun2()
+fun1()
